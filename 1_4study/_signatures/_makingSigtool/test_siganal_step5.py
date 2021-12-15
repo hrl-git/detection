@@ -33,6 +33,8 @@ def DFS_trace(curNode):
     else:
         print(curNode.get_data())
 
+           # items는 tuple을 원소로하는 list를 return한다.
+           # key : "FF", value : FF node
     for k,v in curNode.get_child().items():
         DFS_trace(v)
 
